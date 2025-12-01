@@ -119,7 +119,8 @@ class DetailMCViewController: BaseViewController {
             self.textTypeError = "xuất kho".localized()
         } else {
             self.title = typePCB == "Xuất kho".localized() ? "Nhập số lượng xuất kho".localized() : "Nhập số lượng nhập kho".localized()
-            self.reasonView.isHidden = typePCB == "Xuất kho".localized()
+            // Luôn hiển thị phần Ghi chú (bắt buộc)
+            self.reasonView.isHidden = false
             self.textTypeError = typePCB == "Xuất kho".localized() ? "xuất kho".localized() : "nhập kho".localized()
         }
     }
@@ -205,11 +206,28 @@ class DetailMCViewController: BaseViewController {
         titleCodeItemsTv.text = "Mã linh kiện:".localized()
         titleNameItemsTv.text = "Tên linh kiện:".localized()
         titleLocateItemsTv.text = "Vị trí:".localized()
-        tvReason.text = "Lý do:".localized()
+        // Thiết lập nhãn "Ghi chú*" với dấu * màu đỏ
+        setRequiredReasonLabel()
         cancelButton.setTitle("Hủy bỏ".localized(), for: .normal)
         acceptButton.setTitle("Đồng ý".localized(), for: .normal)
         
+        // Luôn hiển thị phần Ghi chú
+        reasonView.isHidden = false
+        
         setDataView()
+    }
+    
+    private func setRequiredReasonLabel() {
+        let baseText = "Ghi chú".localized()
+        let fullText = baseText + "*"
+        let attributed = NSMutableAttributedString(string: fullText)
+        // tô đỏ ký tự cuối cùng là "*"
+        if let redColor = UIColor(named: R.color.textRed.name) {
+            attributed.addAttribute(.foregroundColor, value: redColor, range: NSRange(location: fullText.count - 1, length: 1))
+        } else {
+            attributed.addAttribute(.foregroundColor, value: UIColor.red, range: NSRange(location: fullText.count - 1, length: 1))
+        }
+        tvReason.attributedText = attributed
     }
     
     // MARK: setData
@@ -315,16 +333,13 @@ class DetailMCViewController: BaseViewController {
         reasonTextView!.layer.cornerRadius = 5
         reasonTextView!.layer.borderWidth = 1
         reasonTextView!.layer.borderColor = UIColor(named: R.color.lineColor.name)?.cgColor
-        //reasonTextView.placeholder = "Nhập nội dung..."
         
         reasonTextView.delegate = self
         placeholderLabel.text = "Nhập nội dung...".localized()
         placeholderLabel.font = .systemFont(ofSize: (reasonTextView.font?.pointSize)!, weight: .regular)
-        //.italicSystemFont(ofSize: (reasonTextView.font?.pointSize)!)
         placeholderLabel.sizeToFit()
         reasonTextView.addSubview(placeholderLabel)
         placeholderLabel.frame.origin = CGPoint(x: 5, y: (reasonTextView.font?.pointSize)! / 2)
-        //placeholderLabel.textColor = .tertiaryLabel
         placeholderLabel.textColor = UIColor(named: R.color.textDefault.name)?.withAlphaComponent(0.4)
         placeholderLabel.isHidden = !reasonTextView.text.isEmpty
     }
@@ -440,11 +455,13 @@ class DetailMCViewController: BaseViewController {
             }
         }
         
-        
-        if reasonTextView.text.isEmpty && reasonView.isHidden == false {
+        // Bắt buộc nhập ghi chú
+        if reasonTextView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             errorReasonLabel.isHidden = false
-            
+            errorReasonLabel.text = "Vui lòng nhập ghi chú.".localized()
             isValidate = false
+        } else {
+            errorReasonLabel.isHidden = true
         }
         
         return isValidate
@@ -675,6 +692,7 @@ extension DetailMCViewController: UITextViewDelegate {
                 errorReasonLabel.isHidden = true
             } else {
                 errorReasonLabel.isHidden = false
+                errorReasonLabel.text = "Vui lòng nhập ghi chú.".localized()
             }
         }
         
@@ -682,6 +700,12 @@ extension DetailMCViewController: UITextViewDelegate {
     }
     func textViewDidEndEditing(_ textView: UITextView) {
         placeholderLabel.isHidden = !reasonTextView.text.isEmpty
+        if reasonTextView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            errorReasonLabel.isHidden = false
+            errorReasonLabel.text = "Vui lòng nhập ghi chú.".localized()
+        } else {
+            errorReasonLabel.isHidden = true
+        }
     }
     func textViewDidBeginEditing(_ textView: UITextView) {
         placeholderLabel.isHidden = true
@@ -746,3 +770,4 @@ extension DetailMCViewController: UITextFieldDelegate {
         return true
     }
 }
+
