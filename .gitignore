@@ -1,0 +1,68 @@
+# macOS Files
+.DS_Store
+*.DS_Store
+.DS_Store?
+
+# Build artifacts and intermediate files
+build/
+DerivedData/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcuserdatad/
+*.moved-aside
+*.swp
+*.lock
+
+# Xcode project files
+project.xcworkspace/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/xcschemes
+*.xcworkspace/xcuserdata/
+!*.xcworkspace/contents.xcworkspacedata
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Archives
+*.xcarchive
+
+# Other
+*.moved-aside
+*.plist~
+*.crash
+*.tmp
+*.swp
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.xcactivitylog
+.idea/
+*.hmap
