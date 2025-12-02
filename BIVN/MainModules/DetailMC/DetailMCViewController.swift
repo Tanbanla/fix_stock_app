@@ -349,7 +349,7 @@ class DetailMCViewController: BaseViewController {
         func textFor(value: Double?) -> String {
             let num = value ?? 0
             let formatted = numberFormatter.string(from: NSNumber(value: num)) ?? "\(num)"
-            return "Số còn lại:".localized() + " " + formatted
+            return "Số tồn kho:".localized() + " " + formatted
         }
         if componentDetailModels.indices.contains(0) {
             inventoryNumberLabel1.text = textFor(value: componentDetailModels[0].inventoryNumber)
