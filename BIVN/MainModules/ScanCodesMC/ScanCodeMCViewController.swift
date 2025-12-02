@@ -308,7 +308,7 @@ class ScanCodeMCViewController: BaseViewController {
         }
         
         let networkManager: NetworkManager = NetworkManager()
-        networkManager.getPosition(layout: layout, componentCode: componentCode) { [weak self] result in
+        networkManager.getPositionNew(componentCode: componentCode) { [weak self] result in
             switch result {
             case .success(let response):
                 guard let `self` = self else { return }

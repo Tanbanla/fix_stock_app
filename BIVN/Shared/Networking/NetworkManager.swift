@@ -55,7 +55,9 @@ protocol Networkable {
     func getPosition(layout: String, componentCode: String, completion: @escaping (Result<PositionModel, Error>) -> ()) {
         request(target: .getPosition(layout: layout, componentCode: componentCode), completion: completion)
     }
-    
+     func getPositionNew(componentCode: String, completion: @escaping (Result<PositionModel, Error>) -> ()) {
+         request(target: .getPositionNew(componentCode: componentCode), completion: completion)
+     }
     func postInputStorage(param: Dictionary<String, Any>,completion: @escaping (Result<InputStorageModel, Error>) -> ()) {
         request(target: .inputStorage(params: param), completion: completion)
     }

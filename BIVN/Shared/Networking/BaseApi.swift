@@ -18,6 +18,7 @@ enum API {
     case logout(params: Dictionary<String, Any>)
     case getStorage
     case getPosition(layout: String, componentCode: String)
+    case getPositionNew(componentCode: String)
     case inputStorage(params: Dictionary<String, Any>)
     case outputStorage(params: Dictionary<String, Any>)
     case getListDropdownModel(inventoryId: String, accountId: String)
@@ -108,6 +109,8 @@ extension API: TargetType {
             return "api/storage"
         case .getPosition(let layout, let componentCode):
             return "api/storage/\(layout)/component/\(componentCode)/info"
+        case .getPositionNew(let componentCode):
+            return "api/storage/component/\(componentCode)/info"
         case .inputStorage:
             return "api/storage/input"
         case .outputStorage:
@@ -189,7 +192,7 @@ extension API: TargetType {
             return .post
         case .logout:
             return .post
-        case .getStorage, .getPosition, .getDocType, .getInvestigationDetail:
+        case .getStorage, .getPosition, .getPositionNew, .getDocType, .getInvestigationDetail:
             return .get
         case .getListdocC, .getListAudit, .getListdocB, .scanDocB, .getListdocAE, .scanListDocC, .refreshToken:
             return .post
@@ -216,7 +219,7 @@ extension API: TargetType {
                         "isErrorInvestigation": isErrorInvestigation ? "true" : "false"
                     ]
                 )
-        case .userDetail, .getPosition, .getListDropdownModel, .getListDropdownModelB, .getListDropdownMachines, .getListDropdownMachinesB, .getListDropdownModelCodeB, .getlistLines, .getlistLinesB, .getListDropdownDepartment, .getListDropdownLocation, .getListDropdownComponent, .getDocType, .getDetailSheetsMonitor, .getDetailMonitor, .getInvestigationDetail, .getHistoryInvestigation, .updateStatus:
+        case .userDetail, .getPosition, .getPositionNew, .getListDropdownModel, .getListDropdownModelB, .getListDropdownMachines, .getListDropdownMachinesB, .getListDropdownModelCodeB, .getlistLines, .getlistLinesB, .getListDropdownDepartment, .getListDropdownLocation, .getListDropdownComponent, .getDocType, .getDetailSheetsMonitor, .getDetailMonitor, .getInvestigationDetail, .getHistoryInvestigation, .updateStatus:
             return .requestPlain
         case .login(let params), .loginOverride(let params):
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)

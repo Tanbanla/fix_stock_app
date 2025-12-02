@@ -79,6 +79,11 @@ class DetailMCViewController: BaseViewController {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var tvReason: UILabel!
     
+    // NEW: 3 label hiển thị số lượng còn lại
+    @IBOutlet weak var inventoryNumberLabel1: UILabel!
+    @IBOutlet weak var inventoryNumberLabel2: UILabel!
+    @IBOutlet weak var inventoryNumberLabel3: UILabel!
+    
     var placeholderLabel = UILabel()
     var type: TypeRole?
     var typePCB: String?
@@ -158,7 +163,6 @@ class DetailMCViewController: BaseViewController {
         self.setupTextView()
         self.setFontTitleNavBar()
         bottomView.addshadow(top: true, left: false, bottom: false, right: false)
-//        addTopShadow(forView: bottomView)
         titleCodeItemsTv.textColor = UIColor(named: R.color.textDefault.name)
         contentCodeItemsTv.textColor = UIColor(named: R.color.buttonBlue.name)
         titleNameItemsTv.textColor = UIColor(named: R.color.textDefault.name)
@@ -202,6 +206,13 @@ class DetailMCViewController: BaseViewController {
         viewNSL2.isHidden = true
         viewNSL3.isHidden = true
         
+        // NEW: màu chữ cho label tồn
+        inventoryNumberLabel1.textColor = UIColor(named: R.color.textDefault.name)
+        inventoryNumberLabel2.textColor = UIColor(named: R.color.textDefault.name)
+        inventoryNumberLabel3.textColor = UIColor(named: R.color.textDefault.name)
+        inventoryNumberLabel1.text = ""
+        inventoryNumberLabel2.text = ""
+        inventoryNumberLabel3.text = ""
         
         titleCodeItemsTv.text = "Mã linh kiện:".localized()
         titleNameItemsTv.text = "Tên linh kiện:".localized()
@@ -318,6 +329,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL3.isHidden = false
         }
         
+        // NEW: hiển thị số lượng còn lại theo từng NCC
+        updateInventoryLabels()
+        
         let height1 = contentNoteItemsTv.text?.height(withConstrainedWidth: viewNCC1.frame.width, font: UIFont.systemFont(ofSize: 14, weight: .regular))
         let height2 = contentNoteItemsTv2.text?.height(withConstrainedWidth: viewNCC1.frame.width, font: UIFont.systemFont(ofSize: 14, weight: .regular))
         let height3 = contentNoteItemsTv3.text?.height(withConstrainedWidth: viewNCC1.frame.width, font: UIFont.systemFont(ofSize: 14, weight: .regular))
@@ -327,6 +341,31 @@ class DetailMCViewController: BaseViewController {
         maxNumber = maxNumber ?? 0 < 60 ? 60 : (maxNumber ?? 60) + 20
         
         cstHeightViewSL.constant = CGFloat(componentDetailModels.count * (maxNumber ?? 60)) + 60
+    }
+    
+    // NEW: cập nhật nội dung 3 label tồn
+    private func updateInventoryLabels() {
+        // text mẫu: "Số còn lại: 1,234"
+        func textFor(value: Double?) -> String {
+            let num = value ?? 0
+            let formatted = numberFormatter.string(from: NSNumber(value: num)) ?? "\(num)"
+            return "Số còn lại:".localized() + " " + formatted
+        }
+        if componentDetailModels.indices.contains(0) {
+            inventoryNumberLabel1.text = textFor(value: componentDetailModels[0].inventoryNumber)
+        } else {
+            inventoryNumberLabel1.text = ""
+        }
+        if componentDetailModels.indices.contains(1) {
+            inventoryNumberLabel2.text = textFor(value: componentDetailModels[1].inventoryNumber)
+        } else {
+            inventoryNumberLabel2.text = ""
+        }
+        if componentDetailModels.indices.contains(2) {
+            inventoryNumberLabel3.text = textFor(value: componentDetailModels[2].inventoryNumber)
+        } else {
+            inventoryNumberLabel3.text = ""
+        }
     }
     
     private func setupTextView() {
@@ -356,7 +395,7 @@ class DetailMCViewController: BaseViewController {
             
             numberItemsTextfield.text = numberFormatter.string(from: NSNumber(value: componentDetailModels.count > 0 ? componentDetailModels[0].inventoryNumber ?? 0.0 : 0.0))
             numberItemsTextfield2.text = numberFormatter.string(from: NSNumber(value: componentDetailModels.count > 1 ? componentDetailModels[1].inventoryNumber ?? 0.0 : 0.0))
-            numberItemsTextfield3.text = numberFormatter.string(from: NSNumber(value: componentDetailModels.count > 1 ? componentDetailModels[2].inventoryNumber ?? 0.0 : 0.0))
+            numberItemsTextfield3.text = numberFormatter.string(from: NSNumber(value: componentDetailModels.count > 2 ? componentDetailModels[2].inventoryNumber ?? 0.0 : 0.0))
         } else {
             btnCheck.setImage(UIImage(named: R.image.ic_uncheckbox.name), for: .normal)
             
@@ -400,6 +439,9 @@ class DetailMCViewController: BaseViewController {
             numberItemsTextfield.text = numberFormatter.string(from: numberFormatter.number(from: numberItemsTextfield.text ??  "") ?? 0)
             numberItemsTextfield2.text = numberFormatter.string(from: numberFormatter.number(from: numberItemsTextfield2.text ??  "") ?? 0)
             numberItemsTextfield3.text = numberFormatter.string(from: numberFormatter.number(from: numberItemsTextfield3.text ??  "") ?? 0)
+            
+            // NEW: cập nhật lại hiển thị tồn theo locale mới
+            updateInventoryLabels()
         }
     }
     
@@ -770,4 +812,3 @@ extension DetailMCViewController: UITextFieldDelegate {
         return true
     }
 }
-
