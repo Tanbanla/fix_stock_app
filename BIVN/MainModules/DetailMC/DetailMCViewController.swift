@@ -79,6 +79,11 @@ class DetailMCViewController: BaseViewController {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var tvReason: UILabel!
     
+    // NEW: cột “Tồn kho”
+    @IBOutlet weak var inventoryLabel1: UILabel!
+    @IBOutlet weak var inventoryLabel2: UILabel!
+    @IBOutlet weak var inventoryLabel3: UILabel!
+    
     var placeholderLabel = UILabel()
     var type: TypeRole?
     var typePCB: String?
@@ -221,12 +226,6 @@ class DetailMCViewController: BaseViewController {
         let baseText = "Ghi chú".localized()
         let fullText = baseText
         let attributed = NSMutableAttributedString(string: fullText)
-        // tô đỏ ký tự cuối cùng là "*"
-//        if let redColor = UIColor(named: R.color.textRed.name) {
-//            attributed.addAttribute(.foregroundColor, value: redColor, range: NSRange(location: fullText.count - 1, length: 1))
-//        } else {
-//            attributed.addAttribute(.foregroundColor, value: UIColor.red, range: NSRange(location: fullText.count - 1, length: 1))
-//        }
         tvReason.attributedText = attributed
     }
     
@@ -288,10 +287,22 @@ class DetailMCViewController: BaseViewController {
         numberItemsTextfield2.font = .systemFont(ofSize: (numberItemsTextfield2.text?.count ?? 0) > 0 ? 24 : 14, weight: (numberItemsTextfield2.text?.count ?? 0) > 0 ? .bold : .regular)
         numberItemsTextfield3.font = .systemFont(ofSize: (numberItemsTextfield3.text?.count ?? 0) > 0 ? 24 : 14, weight: (numberItemsTextfield3.text?.count ?? 0) > 0 ? .bold : .regular)
         
+        // NEW: hiển thị 2 cột (Tên NCC | Tồn kho)
+        // Reset mặc định
+        inventoryLabel1.text = ""
+        inventoryLabel2.text = ""
+        inventoryLabel3.text = ""
+        inventoryLabel1.textColor = UIColor(named: R.color.textDefault.name)
+        inventoryLabel2.textColor = UIColor(named: R.color.textDefault.name)
+        inventoryLabel3.textColor = UIColor(named: R.color.textDefault.name)
+        inventoryLabel1.textAlignment = .right
+        inventoryLabel2.textAlignment = .right
+        inventoryLabel3.textAlignment = .right
         
         if componentDetailModels.count == 1 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
-            contentNoteItemsTv.text = "\(componentDetailModels[0].supplierShortName ?? "") - Tồn: \(inv1)"
+            contentNoteItemsTv.text = "\(componentDetailModels[0].supplierShortName ?? "")"
+            inventoryLabel1.text = inv1
             viewNCC1.isHidden = false
             viewNCC2.isHidden = true
             viewNCC3.isHidden = true
@@ -301,8 +312,10 @@ class DetailMCViewController: BaseViewController {
         } else if componentDetailModels.count == 2 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
             let inv2 = numberFormatter.string(from: NSNumber(value: componentDetailModels[1].inventoryNumber ?? 0.0)) ?? "0"
-            contentNoteItemsTv.text = "\(componentDetailModels[0].supplierShortName ?? "") - Tồn: \(inv1)"
-            contentNoteItemsTv2.text = "\(componentDetailModels[1].supplierShortName ?? "") - Tồn: \(inv2)"
+            contentNoteItemsTv.text = "\(componentDetailModels[0].supplierShortName ?? "")"
+            contentNoteItemsTv2.text = "\(componentDetailModels[1].supplierShortName ?? "")"
+            inventoryLabel1.text = inv1
+            inventoryLabel2.text = inv2
             viewNCC1.isHidden = false
             viewNCC2.isHidden = false
             viewNCC3.isHidden = true
@@ -313,9 +326,12 @@ class DetailMCViewController: BaseViewController {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
             let inv2 = numberFormatter.string(from: NSNumber(value: componentDetailModels[1].inventoryNumber ?? 0.0)) ?? "0"
             let inv3 = numberFormatter.string(from: NSNumber(value: componentDetailModels[2].inventoryNumber ?? 0.0)) ?? "0"
-            contentNoteItemsTv.text = "\(componentDetailModels[0].supplierShortName ?? "") - Tồn: \(inv1)"
-            contentNoteItemsTv2.text = "\(componentDetailModels[1].supplierShortName ?? "") - Tồn: \(inv2)"
-            contentNoteItemsTv3.text = "\(componentDetailModels[2].supplierShortName ?? "") - Tồn: \(inv3)"
+            contentNoteItemsTv.text = "\(componentDetailModels[0].supplierShortName ?? "")"
+            contentNoteItemsTv2.text = "\(componentDetailModels[1].supplierShortName ?? "")"
+            contentNoteItemsTv3.text = "\(componentDetailModels[2].supplierShortName ?? "")"
+            inventoryLabel1.text = inv1
+            inventoryLabel2.text = inv2
+            inventoryLabel3.text = inv3
             viewNCC1.isHidden = false
             viewNCC2.isHidden = false
             viewNCC3.isHidden = false
@@ -324,6 +340,7 @@ class DetailMCViewController: BaseViewController {
             viewNSL3.isHidden = false
         }
         
+        // Tính chiều cao dựa theo tên NCC (cột trái) để hàng cao đủ chứa tên dài
         let height1 = contentNoteItemsTv.text?.height(withConstrainedWidth: viewNCC1.frame.width, font: UIFont.systemFont(ofSize: 14, weight: .regular))
         let height2 = contentNoteItemsTv2.text?.height(withConstrainedWidth: viewNCC1.frame.width, font: UIFont.systemFont(ofSize: 14, weight: .regular))
         let height3 = contentNoteItemsTv3.text?.height(withConstrainedWidth: viewNCC1.frame.width, font: UIFont.systemFont(ofSize: 14, weight: .regular))
