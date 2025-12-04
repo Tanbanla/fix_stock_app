@@ -84,6 +84,7 @@ class DetailMCViewController: BaseViewController {
     @IBOutlet weak var inventoryLabel2: UILabel!
     @IBOutlet weak var inventoryLabel3: UILabel!
     
+    @IBOutlet weak var titleTonKho: UILabel!
     var placeholderLabel = UILabel()
     var type: TypeRole?
     var typePCB: String?
@@ -163,7 +164,7 @@ class DetailMCViewController: BaseViewController {
         self.setupTextView()
         self.setFontTitleNavBar()
         bottomView.addshadow(top: true, left: false, bottom: false, right: false)
-//        addTopShadow(forView: bottomView)
+        titleTonKho.textColor = UIColor(named: R.color.textDefault.name)
         titleCodeItemsTv.textColor = UIColor(named: R.color.textDefault.name)
         contentCodeItemsTv.textColor = UIColor(named: R.color.buttonBlue.name)
         titleNameItemsTv.textColor = UIColor(named: R.color.textDefault.name)
@@ -207,6 +208,9 @@ class DetailMCViewController: BaseViewController {
         viewNSL2.isHidden = true
         viewNSL3.isHidden = true
         
+        inventoryLabel1.isHidden = true
+        inventoryLabel2.isHidden = true
+        inventoryLabel3.isHidden = true
         
         titleCodeItemsTv.text = "Mã linh kiện:".localized()
         titleNameItemsTv.text = "Tên linh kiện:".localized()
@@ -232,6 +236,7 @@ class DetailMCViewController: BaseViewController {
     // MARK: setData
     private func setDataView() {
         titleNoteItemsTv.text = "Tên NCC:".localized()
+        titleTonKho.text = "SL Tồn".localized()
         imgCloseNumberItems.addTapGestureRecognizer { [weak self] in
             guard let `self` = self else { return }
             self.numberItemsTextfield.text = ""
@@ -289,15 +294,12 @@ class DetailMCViewController: BaseViewController {
         
         // NEW: hiển thị 2 cột (Tên NCC | Tồn kho)
         // Reset mặc định
-        inventoryLabel1.text = ""
-        inventoryLabel2.text = ""
-        inventoryLabel3.text = ""
         inventoryLabel1.textColor = UIColor(named: R.color.textDefault.name)
         inventoryLabel2.textColor = UIColor(named: R.color.textDefault.name)
         inventoryLabel3.textColor = UIColor(named: R.color.textDefault.name)
-        inventoryLabel1.textAlignment = .right
-        inventoryLabel2.textAlignment = .right
-        inventoryLabel3.textAlignment = .right
+        inventoryLabel1.textAlignment = .left
+        inventoryLabel2.textAlignment = .left
+        inventoryLabel3.textAlignment = .left
         
         if componentDetailModels.count == 1 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
@@ -309,6 +311,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL1.isHidden = false
             viewNSL2.isHidden = true
             viewNSL3.isHidden = true
+            inventoryLabel1.isHidden = false
+            inventoryLabel2.isHidden = true
+            inventoryLabel3.isHidden = true
         } else if componentDetailModels.count == 2 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
             let inv2 = numberFormatter.string(from: NSNumber(value: componentDetailModels[1].inventoryNumber ?? 0.0)) ?? "0"
@@ -322,6 +327,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL1.isHidden = false
             viewNSL2.isHidden = false
             viewNSL3.isHidden = true
+            inventoryLabel1.isHidden = false
+            inventoryLabel2.isHidden = false
+            inventoryLabel3.isHidden = true
         } else if componentDetailModels.count == 3 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
             let inv2 = numberFormatter.string(from: NSNumber(value: componentDetailModels[1].inventoryNumber ?? 0.0)) ?? "0"
@@ -338,6 +346,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL1.isHidden = false
             viewNSL2.isHidden = false
             viewNSL3.isHidden = false
+            inventoryLabel1.isHidden = false
+            inventoryLabel2.isHidden = false
+            inventoryLabel3.isHidden = false
         }
         
         // Tính chiều cao dựa theo tên NCC (cột trái) để hàng cao đủ chứa tên dài
