@@ -78,6 +78,13 @@ class DetailMCViewController: BaseViewController {
     @IBOutlet weak var viewNSL3: UIView!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var tvReason: UILabel!
+    // view Inv
+    
+    @IBOutlet weak var viewInv1: UIView!
+    
+    @IBOutlet weak var viewInv2: UIView!
+    
+    @IBOutlet weak var viewInv3: UIView!
     
     // NEW: cột “Tồn kho”
     @IBOutlet weak var inventoryLabel1: UILabel!
@@ -208,9 +215,9 @@ class DetailMCViewController: BaseViewController {
         viewNSL2.isHidden = true
         viewNSL3.isHidden = true
         
-        inventoryLabel1.isHidden = true
-        inventoryLabel2.isHidden = true
-        inventoryLabel3.isHidden = true
+        viewInv1.isHidden = true
+        viewInv2.isHidden = true
+        viewInv3.isHidden = true
         
         titleCodeItemsTv.text = "Mã linh kiện:".localized()
         titleNameItemsTv.text = "Tên linh kiện:".localized()
@@ -311,9 +318,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL1.isHidden = false
             viewNSL2.isHidden = true
             viewNSL3.isHidden = true
-            inventoryLabel1.isHidden = false
-            inventoryLabel2.isHidden = true
-            inventoryLabel3.isHidden = true
+            viewInv1.isHidden = false
+            viewInv2.isHidden = true
+            viewInv3.isHidden = true
         } else if componentDetailModels.count == 2 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
             let inv2 = numberFormatter.string(from: NSNumber(value: componentDetailModels[1].inventoryNumber ?? 0.0)) ?? "0"
@@ -327,9 +334,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL1.isHidden = false
             viewNSL2.isHidden = false
             viewNSL3.isHidden = true
-            inventoryLabel1.isHidden = false
-            inventoryLabel2.isHidden = false
-            inventoryLabel3.isHidden = true
+            viewInv1.isHidden = false
+            viewInv2.isHidden = false
+            viewInv3.isHidden = true
         } else if componentDetailModels.count == 3 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
             let inv2 = numberFormatter.string(from: NSNumber(value: componentDetailModels[1].inventoryNumber ?? 0.0)) ?? "0"
@@ -346,9 +353,9 @@ class DetailMCViewController: BaseViewController {
             viewNSL1.isHidden = false
             viewNSL2.isHidden = false
             viewNSL3.isHidden = false
-            inventoryLabel1.isHidden = false
-            inventoryLabel2.isHidden = false
-            inventoryLabel3.isHidden = false
+            viewInv1.isHidden = false
+            viewInv2.isHidden = false
+            viewInv3.isHidden = false
         }
         
         // Tính chiều cao dựa theo tên NCC (cột trái) để hàng cao đủ chứa tên dài

@@ -1243,7 +1243,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXg-yM-iGr" userLabel="ViewInv1">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="60"/>
                                                                                 <subviews>
-                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-F2-ZEA" userLabel="LineBottom">
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-F2-ZEA">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="1"/>
                                                                                         <color key="backgroundColor" name="lineColor"/>
                                                                                         <constraints>
@@ -1663,6 +1663,9 @@
                         <outlet property="titleTonKho" destination="jNQ-Dg-JHj" id="Ng9-Fm-xDk"/>
                         <outlet property="tvReason" destination="lHh-lJ-SFb" id="avS-JB-utT"/>
                         <outlet property="viewCheckAllValue" destination="McR-ZT-kbl" id="ac4-ZI-Hol"/>
+                        <outlet property="viewInv1" destination="FXg-yM-iGr" id="NLa-K7-ak9"/>
+                        <outlet property="viewInv2" destination="pkh-7Q-fTZ" id="S9E-OB-F9C"/>
+                        <outlet property="viewInv3" destination="OED-zy-qCO" id="tlR-Ef-8S2"/>
                         <outlet property="viewNCC1" destination="kRr-x2-EJb" id="sWN-Dy-P8x"/>
                         <outlet property="viewNCC2" destination="7bv-cX-ghx" id="sLd-a5-xtq"/>
                         <outlet property="viewNCC3" destination="URb-rd-7et" id="ChV-9S-vMH"/>
