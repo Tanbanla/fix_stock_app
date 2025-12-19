@@ -585,10 +585,8 @@ class DetailMCViewController: BaseViewController {
                 case .success(let response):
                     guard let `self` = self else { return }
                     if response.code == 200 {
-                        self.showToast(timeSeconds: 3.0, messgage: "Nhập kho linh kiện thành công!".localized())
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            self.navigationController?.popViewController(animated: true)
-                        }
+                        let title = "Nhập kho linh kiện thành công!".localized()
+                        self.fetchRemainingInventoryAndShow(isOutput: false, title: title)
                     } else if response.code == 401 || response.code == 403 || response.code == 60 || response.code == 15 || response.code == 17 || response.code == 56 {
                         self.showAlertExpiredToken(code: response.code) { [weak self] result in
                             guard let self = self else { return }
@@ -700,10 +698,8 @@ class DetailMCViewController: BaseViewController {
                 case .success(let response):
                     guard let `self` = self else { return }
                     if response.code == 200 {
-                        self.showToast(timeSeconds: 3.0, messgage: "Xuất kho linh kiện thành công!".localized())
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            self.navigationController?.popViewController(animated: true)
-                        }
+                        let title = "Xuất kho linh kiện thành công!".localized()
+                        self.fetchRemainingInventoryAndShow(isOutput: true, title: title)
                     } else if response.code == 401 || response.code == 403 || response.code == 60 || response.code == 15 || response.code == 17 || response.code == 56 {
                         self.showAlertExpiredToken(code: response.code) { [weak self] result in
                             guard let self = self else { return }
@@ -723,6 +719,64 @@ class DetailMCViewController: BaseViewController {
             }
         }
         
+    }
+    
+    // Refetch updated inventory from server and show alert then pop
+    private func fetchRemainingInventoryAndShow(isOutput: Bool, title: String) {
+        guard InternetManager.isConnected() else {
+            self.showAlerInternet()
+            return
+        }
+        let compCode = componentDetailModels.first?.componentCode ?? contentCodeItemsTv.text ?? ""
+        let currentPos = componentDetailModels.first?.positionCode
+        let networkManager: NetworkManager = NetworkManager()
+        self.startLoading()
+        networkManager.getPositionNew(componentCode: compCode) { [weak self] result in
+            guard let self = self else { return }
+            self.stopLoading()
+            switch result {
+            case .success(let response):
+                if response.code == 200 {
+                    let positions = response.data ?? []
+                    var details: [ComponentDetailModel] = []
+                    if let pos = currentPos, let match = positions.first(where: { $0.positionCode == pos }) {
+                        details = match.componentDetails ?? []
+                    } else {
+                        details = positions.first?.componentDetails ?? []
+                    }
+                    let lines = details.map { m -> String in
+                        let supplier = m.supplierShortName ?? ""
+                        let remain = m.inventoryNumber ?? 0.0
+                        let remainStr = self.numberFormatter.string(from: NSNumber(value: remain)) ?? String(remain)
+                        return supplier.isEmpty ? "- \(remainStr)" : "- \(supplier): \(remainStr)"
+                    }.joined(separator: "\n")
+                    let message = lines.isEmpty ? title : ("Số lượng tồn còn lại:".localized() + "\n" + lines)
+                    self.showInfoThenPop(title: title, message: message)
+                } else if response.code == 401 || response.code == 403 || response.code == 60 || response.code == 15 || response.code == 17 || response.code == 56 {
+                    self.showAlertExpiredToken(code: response.code) { [weak self] _ in
+                        self?.fetchRemainingInventoryAndShow(isOutput: isOutput, title: title)
+                    }
+                } else {
+                    self.showInfoThenPop(title: title, message: title)
+                }
+            case .failure(let error):
+                if case MoyaError.underlying(let underlyingError, _) = error {
+                    if (underlyingError as NSError).code == 13 {
+                        self.showAlertConfigTimeOut()
+                    }
+                }
+                self.showInfoThenPop(title: title, message: title)
+            }
+        }
+    }
+
+    // Show info alert then pop back to previous screen
+    private func showInfoThenPop(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }))
+        self.present(alert, animated: true)
     }
     
 }

@@ -1092,7 +1092,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Tên NCC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rz-9h-Ufg">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="60"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                                 <color key="textColor" name="textDefault"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -1111,7 +1111,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="SL Tồn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNQ-Dg-JHj">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="60"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                                 <color key="textColor" name="textDefault"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -1130,7 +1130,7 @@
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Số lượng xuất" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auf-kQ-Tuj">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="60"/>
-                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                                 <color key="textColor" name="textDefault"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -1163,7 +1163,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Seoul Metal Vietnam Company" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr0-bq-wuc">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="163" height="60"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <color key="textColor" name="textDefault"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1191,7 +1191,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Seoul Metal Vietnam" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye5-c9-typ">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <color key="textColor" name="textDefault"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1219,7 +1219,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Seoul Metal Vietnam" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btu-Lo-mfJ">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="153" height="60"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <color key="textColor" name="textDefault"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1252,7 +1252,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="1000000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo1-OD-KLS">
                                                                                         <rect key="frame" x="23" y="0.0" width="153" height="60"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <color key="textColor" name="textDefault"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1280,7 +1280,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="999999" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STL-7T-tqX">
                                                                                         <rect key="frame" x="25" y="0.0" width="153" height="60"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <color key="textColor" name="textDefault"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1308,7 +1308,7 @@
                                                                                     </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-xa-Pw8">
                                                                                         <rect key="frame" x="26" y="0.0" width="153" height="60"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <color key="textColor" name="textDefault"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
@@ -1347,10 +1347,10 @@
                                                                                         </constraints>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số lượng..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yn-6v-dad">
-                                                                                        <rect key="frame" x="-6" y="0.0" width="160" height="60"/>
+                                                                                        <rect key="frame" x="8" y="12" width="92" height="36"/>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <textInputTraits key="textInputTraits"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -1365,10 +1365,11 @@
                                                                                     <constraint firstItem="oGG-sL-93C" firstAttribute="leading" secondItem="5yn-6v-dad" secondAttribute="trailing" constant="8" id="370-uB-sDc"/>
                                                                                     <constraint firstItem="zEe-uE-Q1R" firstAttribute="leading" secondItem="3YN-K9-wHe" secondAttribute="leading" id="6Ve-QD-kEh"/>
                                                                                     <constraint firstItem="oGG-sL-93C" firstAttribute="centerY" secondItem="3YN-K9-wHe" secondAttribute="centerY" id="IXf-C0-jmq"/>
-                                                                                    <constraint firstItem="5yn-6v-dad" firstAttribute="top" secondItem="3YN-K9-wHe" secondAttribute="top" id="TMQ-38-z8m"/>
+                                                                                    <constraint firstItem="5yn-6v-dad" firstAttribute="leading" secondItem="3YN-K9-wHe" secondAttribute="leading" constant="8" id="tf1-leading"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="oGG-sL-93C" secondAttribute="trailing" constant="8" id="eLb-0W-0Nw"/>
                                                                                     <constraint firstItem="zEe-uE-Q1R" firstAttribute="top" secondItem="3YN-K9-wHe" secondAttribute="top" id="hDk-jr-VwO"/>
-                                                                                    <constraint firstAttribute="bottom" secondItem="5yn-6v-dad" secondAttribute="bottom" id="ylf-Xv-g6y"/>
+                                                                                    <constraint firstItem="5yn-6v-dad" firstAttribute="centerY" secondItem="3YN-K9-wHe" secondAttribute="centerY" id="tf1-centerY"/>
+                                                                                    <constraint firstItem="5yn-6v-dad" firstAttribute="height" constant="36" id="tf1-height"/>
                                                                                 </constraints>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkA-l7-zRQ" userLabel="ViewNLK2">
@@ -1389,10 +1390,10 @@
                                                                                         </constraints>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số lượng..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qWH-f0-6Dw">
-                                                                                        <rect key="frame" x="-6" y="0.0" width="144" height="60"/>
+                                                                                        <rect key="frame" x="8" y="12" width="92" height="36"/>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <textInputTraits key="textInputTraits"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -1403,8 +1404,9 @@
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="bottom" secondItem="qWH-f0-6Dw" secondAttribute="bottom" id="2lG-Wq-D1Y"/>
-                                                                                    <constraint firstItem="qWH-f0-6Dw" firstAttribute="top" secondItem="rkA-l7-zRQ" secondAttribute="top" id="CQ2-wt-8d9"/>
+                                                                                    <constraint firstItem="qWH-f0-6Dw" firstAttribute="leading" secondItem="rkA-l7-zRQ" secondAttribute="leading" constant="8" id="tf2-leading"/>
+                                                                                    <constraint firstItem="qWH-f0-6Dw" firstAttribute="centerY" secondItem="rkA-l7-zRQ" secondAttribute="centerY" id="tf2-centerY"/>
+                                                                                    <constraint firstItem="qWH-f0-6Dw" firstAttribute="height" constant="36" id="tf2-height"/>
                                                                                     <constraint firstItem="JIi-qx-vcn" firstAttribute="centerY" secondItem="rkA-l7-zRQ" secondAttribute="centerY" id="Lwq-y5-I4V"/>
                                                                                     <constraint firstItem="JIi-qx-vcn" firstAttribute="leading" secondItem="qWH-f0-6Dw" secondAttribute="trailing" constant="8" id="dgH-qa-5EA"/>
                                                                                     <constraint firstItem="IEp-HL-4pl" firstAttribute="leading" secondItem="rkA-l7-zRQ" secondAttribute="leading" id="dns-cJ-ckG"/>
@@ -1431,10 +1433,10 @@
                                                                                         </constraints>
                                                                                     </imageView>
                                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số lượng..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qW-e7-1FT">
-                                                                                        <rect key="frame" x="-6" y="0.0" width="144" height="60"/>
+                                                                                        <rect key="frame" x="8" y="12" width="92" height="36"/>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                         <textInputTraits key="textInputTraits"/>
                                                                                         <userDefinedRuntimeAttributes>
                                                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -1448,8 +1450,9 @@
                                                                                     <constraint firstItem="jrl-hS-a21" firstAttribute="top" secondItem="KX3-1Q-OFk" secondAttribute="top" id="1cY-4Y-HOT"/>
                                                                                     <constraint firstItem="r3L-mD-nzb" firstAttribute="centerY" secondItem="KX3-1Q-OFk" secondAttribute="centerY" id="1hs-Dd-w1X"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="jrl-hS-a21" secondAttribute="trailing" id="9EG-2E-LCI"/>
-                                                                                    <constraint firstItem="7qW-e7-1FT" firstAttribute="top" secondItem="KX3-1Q-OFk" secondAttribute="top" id="Euj-eX-wSe"/>
-                                                                                    <constraint firstAttribute="bottom" secondItem="7qW-e7-1FT" secondAttribute="bottom" id="TK3-Ti-hHS"/>
+                                                                                    <constraint firstItem="7qW-e7-1FT" firstAttribute="leading" secondItem="KX3-1Q-OFk" secondAttribute="leading" constant="8" id="tf3-leading"/>
+                                                                                    <constraint firstItem="7qW-e7-1FT" firstAttribute="centerY" secondItem="KX3-1Q-OFk" secondAttribute="centerY" id="tf3-centerY"/>
+                                                                                    <constraint firstItem="7qW-e7-1FT" firstAttribute="height" constant="36" id="tf3-height"/>
                                                                                     <constraint firstItem="r3L-mD-nzb" firstAttribute="leading" secondItem="7qW-e7-1FT" secondAttribute="trailing" constant="8" id="gd6-zo-LQV"/>
                                                                                     <constraint firstItem="jrl-hS-a21" firstAttribute="leading" secondItem="KX3-1Q-OFk" secondAttribute="leading" id="n8F-Dg-3kE"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="r3L-mD-nzb" secondAttribute="trailing" constant="8" id="r77-7A-2Y3"/>
