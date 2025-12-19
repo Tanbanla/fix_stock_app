@@ -304,9 +304,9 @@ class DetailMCViewController: BaseViewController {
         inventoryLabel1.textColor = UIColor(named: R.color.textDefault.name)
         inventoryLabel2.textColor = UIColor(named: R.color.textDefault.name)
         inventoryLabel3.textColor = UIColor(named: R.color.textDefault.name)
-        inventoryLabel1.textAlignment = .left
-        inventoryLabel2.textAlignment = .left
-        inventoryLabel3.textAlignment = .left
+        inventoryLabel1.textAlignment = .center
+        inventoryLabel2.textAlignment = .center
+        inventoryLabel3.textAlignment = .center
         
         if componentDetailModels.count == 1 {
             let inv1 = numberFormatter.string(from: NSNumber(value: componentDetailModels[0].inventoryNumber ?? 0.0)) ?? "0"
@@ -529,7 +529,7 @@ class DetailMCViewController: BaseViewController {
             let quantity = unFormatNumber(stringValue: numberItemsTextfield.text ?? "0")
             let supplierCode = self.componentDetailModels[0].supplierCode ?? ""
             
-            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness)
+            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness, employeeCode: UserDefault.shared.getUserID())
             listComponent.append(modelComponent.dict)
             
             let inputValue = unFormatNumber(stringValue: numberItemsTextfield.text ?? "0")
@@ -545,7 +545,7 @@ class DetailMCViewController: BaseViewController {
             let quantity = unFormatNumber(stringValue: numberItemsTextfield2.text ?? "0")
             let supplierCode = self.componentDetailModels[1].supplierCode ?? ""
             
-            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness)
+            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness,employeeCode: UserDefault.shared.getUserID())
             listComponent.append(modelComponent.dict)
             
             let inputValue = unFormatNumber(stringValue: numberItemsTextfield2.text ?? "0")
@@ -561,7 +561,7 @@ class DetailMCViewController: BaseViewController {
             let quantity = unFormatNumber(stringValue: numberItemsTextfield3.text ?? "0")
             let supplierCode = self.componentDetailModels[2].supplierCode ?? ""
             
-            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness)
+            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness,employeeCode: UserDefault.shared.getUserID())
             listComponent.append(modelComponent.dict)
             
             let inputValue = unFormatNumber(stringValue: numberItemsTextfield3.text ?? "0")
@@ -633,6 +633,7 @@ class DetailMCViewController: BaseViewController {
         let userID = UserDefault.shared.getDataLoginModel().userId ?? ""
         let typeOfBusiness = type == .mc ? 1 : 2
         
+        //UserDefault.shared.getUserID();//
         var isValidateCount1 = true
         var isValidateCount2 = true
         var isValidateCount3 = true
@@ -643,7 +644,7 @@ class DetailMCViewController: BaseViewController {
             let quantity = unFormatNumber(stringValue: numberItemsTextfield.text ?? "0")
             let supplierCode = self.componentDetailModels[0].supplierCode ?? ""
             
-            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness)
+            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness,employeeCode: UserDefault.shared.getUserID())
             listComponent.append(modelComponent.dict)
             
             let inputValue =  unFormatNumber(stringValue: numberItemsTextfield.text ?? "0")
@@ -659,7 +660,7 @@ class DetailMCViewController: BaseViewController {
             let quantity = unFormatNumber(stringValue: numberItemsTextfield2.text ?? "0")
             let supplierCode = self.componentDetailModels[1].supplierCode ?? ""
             
-            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness)
+            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness,employeeCode: UserDefault.shared.getUserID())
             listComponent.append(modelComponent.dict)
             
             let inputValue = unFormatNumber(stringValue: numberItemsTextfield2.text ?? "0")
@@ -675,7 +676,7 @@ class DetailMCViewController: BaseViewController {
             let quantity = unFormatNumber(stringValue: numberItemsTextfield3.text ?? "0")
             let supplierCode = self.componentDetailModels[2].supplierCode ?? ""
             
-            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness)
+            let modelComponent = ComponentInOutModel(positionCode:  positionCode, supplierCode: supplierCode, userId: userID, quantity: quantity, reason: reasonTextView.text, typeOfBusiness: typeOfBusiness,employeeCode: UserDefault.shared.getUserID())
             listComponent.append(modelComponent.dict)
             
             let inputValue = unFormatNumber(stringValue: numberItemsTextfield3.text ?? "0")

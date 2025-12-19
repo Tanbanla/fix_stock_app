@@ -234,14 +234,26 @@ class ScanUserIDController: BaseViewController {
     private func navigateToMain() {
         removeScanCode()
         queen.suspend()
+//        let vc : MainViewController = self.storyboard?.instantiateViewController(withIdentifier: R.storyboard.main.mainViewController.identifier) as! MainViewController
+//        if UserDefault.shared.getDataLoginModel().mobileAccess == TypeRole.mc.value {
+//            vc.isCheckType = .mc
+//        } else {
+//            vc.isCheckType = .pcb
+//        }
+//        self.navigationController?.pushViewController(vc, animated: true)
         guard let vc = Storyboards.main.instantiate() as? MainViewController else {return}
-        if UserDefault.shared.getDataLoginModel().inventoryLoggedInfo?.inventoryRoleType == UIViewController.inventory {
-            vc.isCheckType = .inventory
-        } else if UserDefault.shared.getDataLoginModel().inventoryLoggedInfo?.inventoryRoleType == UIViewController.monitor {
-            vc.isCheckType = .monitor
-        } else if UserDefault.shared.getDataLoginModel().inventoryLoggedInfo?.inventoryRoleType == UIViewController.promote {
-            vc.isCheckType = .inventory
-        }
+//        if UserDefault.shared.getDataLoginModel().inventoryLoggedInfo?.inventoryRoleType == UIViewController.inventory {
+//            vc.isCheckType = .inventory
+//        } else if UserDefault.shared.getDataLoginModel().inventoryLoggedInfo?.inventoryRoleType == UIViewController.monitor {
+//            vc.isCheckType = .monitor
+//        } else if UserDefault.shared.getDataLoginModel().inventoryLoggedInfo?.inventoryRoleType == UIViewController.promote {
+//            vc.isCheckType = .inventory
+//        }
+                if UserDefault.shared.getDataLoginModel().mobileAccess == TypeRole.mc.value {
+                    vc.isCheckType = .mc
+                } else {
+                    vc.isCheckType = .pcb
+                }
         self.navigationController?.pushViewController(vc, animated: true)
     }
     override func viewWillDisappear(_ animated: Bool) {

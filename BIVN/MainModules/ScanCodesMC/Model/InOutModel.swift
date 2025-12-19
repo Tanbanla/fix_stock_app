@@ -20,6 +20,7 @@ struct ComponentInOutModel: Codable {
     var quantity: Double
     var reason: String
     var typeOfBusiness: Int
+    var employeeCode: String?
     
     var dict: [String : Any] {
         return [
@@ -29,6 +30,7 @@ struct ComponentInOutModel: Codable {
             "quantity" : quantity,
             "reason" : reason,
             "typeOfBusiness" : typeOfBusiness,
+            "employeeCode": employeeCode
         ]
     }
 }

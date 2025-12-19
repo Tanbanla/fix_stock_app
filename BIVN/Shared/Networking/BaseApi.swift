@@ -18,7 +18,7 @@ enum API {
     case logout(params: Dictionary<String, Any>)
     case getStorage
     case getPosition(layout: String, componentCode: String)
-    case getPositionNew(componentCode: String)
+    case getPositionNew(componentCode:  String)
     case inputStorage(params: Dictionary<String, Any>)
     case outputStorage(params: Dictionary<String, Any>)
     case getListDropdownModel(inventoryId: String, accountId: String)
@@ -219,7 +219,7 @@ extension API: TargetType {
                         "isErrorInvestigation": isErrorInvestigation ? "true" : "false"
                     ]
                 )
-        case .userDetail, .getPosition, .getPositionNew, .getListDropdownModel, .getListDropdownModelB, .getListDropdownMachines, .getListDropdownMachinesB, .getListDropdownModelCodeB, .getlistLines, .getlistLinesB, .getListDropdownDepartment, .getListDropdownLocation, .getListDropdownComponent, .getDocType, .getDetailSheetsMonitor, .getDetailMonitor, .getInvestigationDetail, .getHistoryInvestigation, .updateStatus:
+        case .userDetail, .getPosition,.getPositionNew, .getListDropdownModel, .getListDropdownModelB, .getListDropdownMachines, .getListDropdownMachinesB, .getListDropdownModelCodeB, .getlistLines, .getlistLinesB, .getListDropdownDepartment, .getListDropdownLocation, .getListDropdownComponent, .getDocType, .getDetailSheetsMonitor, .getDetailMonitor, .getInvestigationDetail, .getHistoryInvestigation, .updateStatus:
             return .requestPlain
         case .login(let params), .loginOverride(let params):
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)

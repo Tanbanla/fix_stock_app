@@ -21,7 +21,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         numberFormatter.usesGroupingSeparator = true
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
         numberFormatter.maximumFractionDigits = 61
-        numberFormatter.groupingSeparator = Locale.current.groupingSeparator
+        numberFormatter.groupingSeparator = Locale.current.groupingSeparator ?? ","
     }
     
     private var enableHideKeyBoardWhenTouchInScreen: Bool = true

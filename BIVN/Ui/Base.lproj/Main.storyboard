@@ -1097,7 +1097,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <color key="backgroundColor" name="grey1"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="bottom" secondItem="5Rz-9h-Ufg" secondAttribute="bottom" id="F7Z-jT-qkn"/>
                                                                             <constraint firstItem="5Rz-9h-Ufg" firstAttribute="leading" secondItem="aMR-M7-88b" secondAttribute="leading" id="W6X-PQ-vRK"/>
@@ -1116,7 +1116,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <color key="backgroundColor" name="grey1"/>
                                                                         <constraints>
                                                                             <constraint firstItem="jNQ-Dg-JHj" firstAttribute="leading" secondItem="Ryd-4M-VUh" secondAttribute="leading" id="1xG-ZD-ZLV"/>
                                                                             <constraint firstItem="jNQ-Dg-JHj" firstAttribute="top" secondItem="Ryd-4M-VUh" secondAttribute="top" id="MbC-qp-vQ9"/>
@@ -1135,7 +1135,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <color key="backgroundColor" name="grey1"/>
                                                                         <constraints>
                                                                             <constraint firstItem="auf-kQ-Tuj" firstAttribute="leading" secondItem="COd-06-EQZ" secondAttribute="leading" id="71h-DL-CHT"/>
                                                                             <constraint firstItem="auf-kQ-Tuj" firstAttribute="top" secondItem="COd-06-EQZ" secondAttribute="top" id="K9m-ov-onH"/>
@@ -1466,18 +1466,24 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Stn-nJ-z2q" userLabel="LineCTx">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Stn-nJ-z2q" userLabel="LineCTx">
                                                         <rect key="frame" x="224" y="0.0" width="1" height="240"/>
                                                         <color key="backgroundColor" name="lineColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="7jx-j6-mua"/>
+                                                            <constraint firstItem="Stn-nJ-z2q" firstAttribute="top" secondItem="Lbo-hJ-FWi" secondAttribute="top" id="Stn-top-constraint"/>
+                                                            <constraint firstItem="Stn-nJ-z2q" firstAttribute="bottom" secondItem="Lbo-hJ-FWi" secondAttribute="bottom" id="Stn-bottom-constraint"/>
+                                                            <constraint firstItem="Stn-nJ-z2q" firstAttribute="leading" secondItem="1nC-6j-1c8" secondAttribute="leading" id="Stn-leading-constraint"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrV-Wb-DiU" userLabel="LineCTx">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrV-Wb-DiU" userLabel="LineCTx">
                                                         <rect key="frame" x="138" y="0.0" width="1" height="240"/>
                                                         <color key="backgroundColor" name="lineColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="28E-7k-UV3"/>
+                                                            <constraint firstItem="HrV-Wb-DiU" firstAttribute="top" secondItem="Lbo-hJ-FWi" secondAttribute="top" id="HrV-top-constraint"/>
+                                                            <constraint firstItem="HrV-Wb-DiU" firstAttribute="bottom" secondItem="Lbo-hJ-FWi" secondAttribute="bottom" id="HrV-bottom-constraint"/>
+                                                            <constraint firstItem="HrV-Wb-DiU" firstAttribute="leading" secondItem="BJ4-PO-Zhj" secondAttribute="leading" id="HrV-leading-constraint"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>

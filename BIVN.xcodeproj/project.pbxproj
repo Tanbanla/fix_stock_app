@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21335973B74DFED2604EF31E /* Pods_BIVNTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0297463CEAA911A99455B8EA /* Pods_BIVNTests.framework */; };
 		505C5B592D2D24A300CEF32C /* ListErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C5B582D2D24A300CEF32C /* ListErrorController.swift */; };
 		505C5B5B2D2D314B00CEF32C /* ListError.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505C5B5A2D2D314B00CEF32C /* ListError.storyboard */; };
 		505C5B5D2D2D3FD500CEF32C /* ListErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C5B5C2D2D3FD500CEF32C /* ListErrorModel.swift */; };
@@ -24,7 +23,6 @@
 		50DFB12D2D36679800B4F47C /* ViewDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DFB12C2D36679800B4F47C /* ViewDetailModel.swift */; };
 		50E4C29E2D5341AE00DB456A /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4C29D2D5341AE00DB456A /* StatusModel.swift */; };
 		50F5B44F2CFFFF140054ABA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50F5B44D2CFFFF140054ABA7 /* Localizable.strings */; };
-		A37DBEABC9040F79A0609B99 /* Pods_BIVN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C4E2D53B8AD609ABA3A1FE /* Pods_BIVN.framework */; };
 		A40176AA2B3A91130009B08E /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40176A82B3A91130009B08E /* ErrorTableViewCell.swift */; };
 		A40176AB2B3A91130009B08E /* ErrorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40176A92B3A91130009B08E /* ErrorTableViewCell.xib */; };
 		A4034C732B21CF0F00B321D1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4034C722B21CF0F00B321D1 /* Constant.swift */; };
@@ -152,7 +150,8 @@
 		B7F7DD9D2AB834B2004A2DFF /* ChooseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F7DD9B2AB834B2004A2DFF /* ChooseTableViewCell.xib */; };
 		B7F7DDA72AB86D4D004A2DFF /* UIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7DDA62AB86D4D004A2DFF /* UIVIew.swift */; };
 		B7FFC9482B16E5D200204F1A /* ActionInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFC9472B16E5D200204F1A /* ActionInventoryViewController.swift */; };
-		C87E7992E99289A370F1419B /* Pods_BIVN_BIVNUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F21196A5FE5B7B0E343295 /* Pods_BIVN_BIVNUITests.framework */; };
+		DDE858F801BFFB93D02E1750 /* Pods_BIVN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BBB48BEABD3549743D1459 /* Pods_BIVN.framework */; };
+		E31EAAD55F15748C503E27D8 /* Pods_BIVNTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4DDD1950468D512AACAE14 /* Pods_BIVNTests.framework */; };
 		F029CA502D40B38000B3DBBC /* ItemTicketCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029CA4E2D40B38000B3DBBC /* ItemTicketCTableCell.swift */; };
 		F029CA512D40B38000B3DBBC /* ItemTicketCTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F029CA4F2D40B38000B3DBBC /* ItemTicketCTableCell.xib */; };
 		F02A474D2B188EB300A8B44B /* DocTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A474C2B188EB300A8B44B /* DocTypeModel.swift */; };
@@ -175,6 +174,7 @@
 		F0E6EB9C2D37BCDB00C882BB /* ErrorInvestigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E6EB9B2D37BCCC00C882BB /* ErrorInvestigation.swift */; };
 		F0F5CC932B2704B2004620FD /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F5CC922B2704B2004620FD /* BaseTableViewCell.swift */; };
 		F0F6AEC42D2E691B0045FACE /* AccessoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6AEC32D2E691B0045FACE /* AccessoryModels.swift */; };
+		F2A75EC3501286CF1EBCADD1 /* Pods_BIVN_BIVNUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FE8915263392725DAA072E /* Pods_BIVN_BIVNUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,13 +195,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0297463CEAA911A99455B8EA /* Pods_BIVNTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVNTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10148A88152D0DE9EE6B95B7 /* Pods-BIVN-BIVNUITests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.debug(production).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.debug(production).xcconfig"; sourceTree = "<group>"; };
-		171F0E096B4389913930C1CB /* Pods-BIVN-BIVNUITests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.release(production).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.release(production).xcconfig"; sourceTree = "<group>"; };
-		1AC2B46B9F0E4714543182F7 /* Pods-BIVNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.debug.xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.debug.xcconfig"; sourceTree = "<group>"; };
-		265E43976CB50BC7BC63F076 /* Pods-BIVN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.release.xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.release.xcconfig"; sourceTree = "<group>"; };
-		3E93732E4CA0DFF2939D6FF9 /* Pods-BIVNTests.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.release(dev).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.release(dev).xcconfig"; sourceTree = "<group>"; };
-		4F6A14764C31474A9C76AAE7 /* Pods-BIVN.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.release(production).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.release(production).xcconfig"; sourceTree = "<group>"; };
+		215B5597094B1CA966AB0177 /* Pods-BIVN-BIVNUITests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.release(production).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.release(production).xcconfig"; sourceTree = "<group>"; };
+		31D68C342C70FAF5BB847B2B /* Pods-BIVN-BIVNUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.debug.xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		36FE8915263392725DAA072E /* Pods_BIVN_BIVNUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVN_BIVNUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4DDD1950468D512AACAE14 /* Pods_BIVNTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVNTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43899C9A7813F191B04FDE0D /* Pods-BIVN-BIVNUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.release.xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.release.xcconfig"; sourceTree = "<group>"; };
 		505C5B582D2D24A300CEF32C /* ListErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListErrorController.swift; sourceTree = "<group>"; };
 		505C5B5A2D2D314B00CEF32C /* ListError.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListError.storyboard; sourceTree = "<group>"; };
 		505C5B5C2D2D3FD500CEF32C /* ListErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListErrorModel.swift; sourceTree = "<group>"; };
@@ -220,14 +218,13 @@
 		50F5B44B2CFFFECE0054ABA7 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
 		50F5B44E2CFFFF140054ABA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		50F5B4502CFFFF410054ABA7 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		51BDB19C258B1E6B8C644146 /* Pods-BIVN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.debug.xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.debug.xcconfig"; sourceTree = "<group>"; };
-		5602A2DDD2420A365D52F37E /* Pods-BIVNTests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.release(production).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.release(production).xcconfig"; sourceTree = "<group>"; };
-		5B4206544AA92D2A66B48A90 /* Pods-BIVN-BIVNUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.debug.xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		712D92A0A9EB1E706BF0FB0E /* Pods-BIVNTests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.debug(dev).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.debug(dev).xcconfig"; sourceTree = "<group>"; };
-		7AF6A7A5C8FDA0D5ECF5C112 /* Pods-BIVN.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.release(dev).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.release(dev).xcconfig"; sourceTree = "<group>"; };
-		87CFBA3EE707E146ED9CA5BF /* Pods-BIVN.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.debug(dev).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.debug(dev).xcconfig"; sourceTree = "<group>"; };
-		89C4E2D53B8AD609ABA3A1FE /* Pods_BIVN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B77672AEF11FD538E70099 /* Pods-BIVN-BIVNUITests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.debug(dev).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		584EF9C885B78D3817A3E947 /* Pods-BIVNTests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.debug(production).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.debug(production).xcconfig"; sourceTree = "<group>"; };
+		611CAEEC044D0659930CA4F8 /* Pods-BIVNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.release.xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E6C4EE9296D08ABCC6BF7BC /* Pods-BIVN.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.release(dev).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.release(dev).xcconfig"; sourceTree = "<group>"; };
+		88755D6E669424F14F99EDAB /* Pods-BIVN.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.debug(production).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.debug(production).xcconfig"; sourceTree = "<group>"; };
+		90B442E36A94D00A118191CF /* Pods-BIVN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.debug.xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.debug.xcconfig"; sourceTree = "<group>"; };
+		92315A8B7B0CF5C82073247B /* Pods-BIVN.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.release(production).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.release(production).xcconfig"; sourceTree = "<group>"; };
+		9DD0C85EDD0F2E6DC74B7FC2 /* Pods-BIVNTests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.release(production).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.release(production).xcconfig"; sourceTree = "<group>"; };
 		A40176A82B3A91130009B08E /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
 		A40176A92B3A91130009B08E /* ErrorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorTableViewCell.xib; sourceTree = "<group>"; };
 		A4034C722B21CF0F00B321D1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -236,7 +233,6 @@
 		A404351B2B19EF7A0078931D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		A404351C2B19EF7E0078931D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		A404351E2B19F20B0078931D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		A427EFD1CD24DD0DD9315B0A /* Pods-BIVN.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.debug(production).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.debug(production).xcconfig"; sourceTree = "<group>"; };
 		A436F8E82B186927004C7AD8 /* DocOutPutRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocOutPutRequestModel.swift; sourceTree = "<group>"; };
 		A436F8EA2B18937C004C7AD8 /* DocTypeCDetailsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTypeCDetailsRequestModel.swift; sourceTree = "<group>"; };
 		A43B6AA32AB311C200818CF6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -299,8 +295,6 @@
 		A4F81A432B1600F700A35E13 /* PartCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartCodeModel.swift; sourceTree = "<group>"; };
 		A4F9F7D32AB06BB500681E1F /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		A4F9F7D52AB06C0300681E1F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		ADC7F53969EE8EFC77467EEA /* Pods-BIVN-BIVNUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.release.xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B6F21196A5FE5B7B0E343295 /* Pods_BIVN_BIVNUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVN_BIVNUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B704C1F02ADE2D6E00D9BAE2 /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
 		B70AB2DF2AB3FCA90070E150 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		B70AB2E12AB3FCB40070E150 /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
@@ -367,9 +361,14 @@
 		B7F7DD9B2AB834B2004A2DFF /* ChooseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseTableViewCell.xib; sourceTree = "<group>"; };
 		B7F7DDA62AB86D4D004A2DFF /* UIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIew.swift; sourceTree = "<group>"; };
 		B7FFC9472B16E5D200204F1A /* ActionInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionInventoryViewController.swift; sourceTree = "<group>"; };
-		CF7C23951D1684C3B4C23C3F /* Pods-BIVNTests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.debug(production).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.debug(production).xcconfig"; sourceTree = "<group>"; };
-		D6791CB5A6F6B8D8E9BC10C8 /* Pods-BIVNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.release.xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.release.xcconfig"; sourceTree = "<group>"; };
-		EEDB304AE49CE8684308182D /* Pods-BIVN-BIVNUITests.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.release(dev).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.release(dev).xcconfig"; sourceTree = "<group>"; };
+		B993DB09A0846AEDF2C41680 /* Pods-BIVN-BIVNUITests.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.release(dev).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.release(dev).xcconfig"; sourceTree = "<group>"; };
+		BE45A0646C2ED98946C2B607 /* Pods-BIVN.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.debug(dev).xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		C6492E765923CACF840F0025 /* Pods-BIVNTests.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.release(dev).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.release(dev).xcconfig"; sourceTree = "<group>"; };
+		D63AD4FFB1EB11137659AA14 /* Pods-BIVNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.debug.xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6C4934AA6012811791878BD /* Pods-BIVNTests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVNTests.debug(dev).xcconfig"; path = "Target Support Files/Pods-BIVNTests/Pods-BIVNTests.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		D7BBB48BEABD3549743D1459 /* Pods_BIVN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BC1B02942B9EC6C33143DF /* Pods-BIVN-BIVNUITests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.debug(dev).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		E4F2B57ED493401860643D92 /* Pods-BIVN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN.release.xcconfig"; path = "Target Support Files/Pods-BIVN/Pods-BIVN.release.xcconfig"; sourceTree = "<group>"; };
 		F029CA4E2D40B38000B3DBBC /* ItemTicketCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTicketCTableCell.swift; sourceTree = "<group>"; };
 		F029CA4F2D40B38000B3DBBC /* ItemTicketCTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTicketCTableCell.xib; sourceTree = "<group>"; };
 		F02A474C2B188EB300A8B44B /* DocTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocTypeModel.swift; sourceTree = "<group>"; };
@@ -392,6 +391,7 @@
 		F0E6EB9B2D37BCCC00C882BB /* ErrorInvestigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInvestigation.swift; sourceTree = "<group>"; };
 		F0F5CC922B2704B2004620FD /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F0F6AEC32D2E691B0045FACE /* AccessoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryModels.swift; sourceTree = "<group>"; };
+		FE88D4C6AA628D0468BEB8E2 /* Pods-BIVN-BIVNUITests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVN-BIVNUITests.debug(production).xcconfig"; path = "Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests.debug(production).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,7 +399,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37DBEABC9040F79A0609B99 /* Pods_BIVN.framework in Frameworks */,
+				DDE858F801BFFB93D02E1750 /* Pods_BIVN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +407,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21335973B74DFED2604EF31E /* Pods_BIVNTests.framework in Frameworks */,
+				E31EAAD55F15748C503E27D8 /* Pods_BIVNTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,23 +415,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87E7992E99289A370F1419B /* Pods_BIVN_BIVNUITests.framework in Frameworks */,
+				F2A75EC3501286CF1EBCADD1 /* Pods_BIVN_BIVNUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B39802045E9C5C937C26E01 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				89C4E2D53B8AD609ABA3A1FE /* Pods_BIVN.framework */,
-				B6F21196A5FE5B7B0E343295 /* Pods_BIVN_BIVNUITests.framework */,
-				0297463CEAA911A99455B8EA /* Pods_BIVNTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		505C5B522D2D23E900CEF32C /* Error Investigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -869,7 +859,7 @@
 				A4F48A272AB052C5007D7A82 /* BIVNUITests */,
 				A4F48A052AB052C4007D7A82 /* Products */,
 				FE4DF926C8289EF8322C0061 /* Pods */,
-				4B39802045E9C5C937C26E01 /* Frameworks */,
+				E0E2F8EDB155C67EAD26464C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1197,6 +1187,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E0E2F8EDB155C67EAD26464C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7BBB48BEABD3549743D1459 /* Pods_BIVN.framework */,
+				36FE8915263392725DAA072E /* Pods_BIVN_BIVNUITests.framework */,
+				3F4DDD1950468D512AACAE14 /* Pods_BIVNTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F04EC2AB2B104AF300D2B2BA /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -1313,24 +1313,24 @@
 		FE4DF926C8289EF8322C0061 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				51BDB19C258B1E6B8C644146 /* Pods-BIVN.debug.xcconfig */,
-				A427EFD1CD24DD0DD9315B0A /* Pods-BIVN.debug(production).xcconfig */,
-				87CFBA3EE707E146ED9CA5BF /* Pods-BIVN.debug(dev).xcconfig */,
-				265E43976CB50BC7BC63F076 /* Pods-BIVN.release.xcconfig */,
-				7AF6A7A5C8FDA0D5ECF5C112 /* Pods-BIVN.release(dev).xcconfig */,
-				4F6A14764C31474A9C76AAE7 /* Pods-BIVN.release(production).xcconfig */,
-				5B4206544AA92D2A66B48A90 /* Pods-BIVN-BIVNUITests.debug.xcconfig */,
-				10148A88152D0DE9EE6B95B7 /* Pods-BIVN-BIVNUITests.debug(production).xcconfig */,
-				A1B77672AEF11FD538E70099 /* Pods-BIVN-BIVNUITests.debug(dev).xcconfig */,
-				ADC7F53969EE8EFC77467EEA /* Pods-BIVN-BIVNUITests.release.xcconfig */,
-				EEDB304AE49CE8684308182D /* Pods-BIVN-BIVNUITests.release(dev).xcconfig */,
-				171F0E096B4389913930C1CB /* Pods-BIVN-BIVNUITests.release(production).xcconfig */,
-				1AC2B46B9F0E4714543182F7 /* Pods-BIVNTests.debug.xcconfig */,
-				CF7C23951D1684C3B4C23C3F /* Pods-BIVNTests.debug(production).xcconfig */,
-				712D92A0A9EB1E706BF0FB0E /* Pods-BIVNTests.debug(dev).xcconfig */,
-				D6791CB5A6F6B8D8E9BC10C8 /* Pods-BIVNTests.release.xcconfig */,
-				3E93732E4CA0DFF2939D6FF9 /* Pods-BIVNTests.release(dev).xcconfig */,
-				5602A2DDD2420A365D52F37E /* Pods-BIVNTests.release(production).xcconfig */,
+				90B442E36A94D00A118191CF /* Pods-BIVN.debug.xcconfig */,
+				88755D6E669424F14F99EDAB /* Pods-BIVN.debug(production).xcconfig */,
+				BE45A0646C2ED98946C2B607 /* Pods-BIVN.debug(dev).xcconfig */,
+				E4F2B57ED493401860643D92 /* Pods-BIVN.release.xcconfig */,
+				7E6C4EE9296D08ABCC6BF7BC /* Pods-BIVN.release(dev).xcconfig */,
+				92315A8B7B0CF5C82073247B /* Pods-BIVN.release(production).xcconfig */,
+				31D68C342C70FAF5BB847B2B /* Pods-BIVN-BIVNUITests.debug.xcconfig */,
+				FE88D4C6AA628D0468BEB8E2 /* Pods-BIVN-BIVNUITests.debug(production).xcconfig */,
+				E2BC1B02942B9EC6C33143DF /* Pods-BIVN-BIVNUITests.debug(dev).xcconfig */,
+				43899C9A7813F191B04FDE0D /* Pods-BIVN-BIVNUITests.release.xcconfig */,
+				B993DB09A0846AEDF2C41680 /* Pods-BIVN-BIVNUITests.release(dev).xcconfig */,
+				215B5597094B1CA966AB0177 /* Pods-BIVN-BIVNUITests.release(production).xcconfig */,
+				D63AD4FFB1EB11137659AA14 /* Pods-BIVNTests.debug.xcconfig */,
+				584EF9C885B78D3817A3E947 /* Pods-BIVNTests.debug(production).xcconfig */,
+				D6C4934AA6012811791878BD /* Pods-BIVNTests.debug(dev).xcconfig */,
+				611CAEEC044D0659930CA4F8 /* Pods-BIVNTests.release.xcconfig */,
+				C6492E765923CACF840F0025 /* Pods-BIVNTests.release(dev).xcconfig */,
+				9DD0C85EDD0F2E6DC74B7FC2 /* Pods-BIVNTests.release(production).xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1342,12 +1342,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F48A2E2AB052C5007D7A82 /* Build configuration list for PBXNativeTarget "BIVN" */;
 			buildPhases = (
-				B50CBF9BF0C99CC4119755F7 /* [CP] Check Pods Manifest.lock */,
+				0850D89ED93274925F51FDAF /* [CP] Check Pods Manifest.lock */,
 				A4F9F7D72AB06F1B00681E1F /* RSwift */,
 				A4F48A002AB052C4007D7A82 /* Sources */,
 				A4F48A012AB052C4007D7A82 /* Frameworks */,
 				A4F48A022AB052C4007D7A82 /* Resources */,
-				90ED5EEF5C57EE8E5D52734C /* [CP] Embed Pods Frameworks */,
+				09FF385464D70276C2499B8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1362,7 +1362,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F48A312AB052C5007D7A82 /* Build configuration list for PBXNativeTarget "BIVNTests" */;
 			buildPhases = (
-				01AEBBD3A60763F6DFB3DC9C /* [CP] Check Pods Manifest.lock */,
+				318015EB168F09A13256754E /* [CP] Check Pods Manifest.lock */,
 				A4F48A162AB052C5007D7A82 /* Sources */,
 				A4F48A172AB052C5007D7A82 /* Frameworks */,
 				A4F48A182AB052C5007D7A82 /* Resources */,
@@ -1381,11 +1381,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F48A342AB052C5007D7A82 /* Build configuration list for PBXNativeTarget "BIVNUITests" */;
 			buildPhases = (
-				9BAF875D3583E70AF8985719 /* [CP] Check Pods Manifest.lock */,
+				73787570B50F1C5F8711D398 /* [CP] Check Pods Manifest.lock */,
 				A4F48A202AB052C5007D7A82 /* Sources */,
 				A4F48A212AB052C5007D7A82 /* Frameworks */,
 				A4F48A222AB052C5007D7A82 /* Resources */,
-				C9EACCFB340789BBE737DC8C /* [CP] Embed Pods Frameworks */,
+				0692FBDAFFD35146E696196A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1514,7 +1514,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01AEBBD3A60763F6DFB3DC9C /* [CP] Check Pods Manifest.lock */ = {
+		0692FBDAFFD35146E696196A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0850D89ED93274925F51FDAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BIVN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09FF385464D70276C2499B8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BIVN/Pods-BIVN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BIVN/Pods-BIVN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BIVN/Pods-BIVN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		318015EB168F09A13256754E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1536,24 +1592,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90ED5EEF5C57EE8E5D52734C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BIVN/Pods-BIVN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BIVN/Pods-BIVN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BIVN/Pods-BIVN-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9BAF875D3583E70AF8985719 /* [CP] Check Pods Manifest.lock */ = {
+		73787570B50F1C5F8711D398 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1595,45 +1634,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		B50CBF9BF0C99CC4119755F7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BIVN-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9EACCFB340789BBE737DC8C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BIVN-BIVNUITests/Pods-BIVN-BIVNUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1889,7 +1889,7 @@
 		};
 		A447CD332AFA2374001A975D /* Debug(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87CFBA3EE707E146ED9CA5BF /* Pods-BIVN.debug(dev).xcconfig */;
+			baseConfigurationReference = BE45A0646C2ED98946C2B607 /* Pods-BIVN.debug(dev).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1925,7 +1925,7 @@
 		};
 		A447CD342AFA2374001A975D /* Debug(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 712D92A0A9EB1E706BF0FB0E /* Pods-BIVNTests.debug(dev).xcconfig */;
+			baseConfigurationReference = D6C4934AA6012811791878BD /* Pods-BIVNTests.debug(dev).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1946,7 +1946,7 @@
 		};
 		A447CD352AFA2374001A975D /* Debug(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B77672AEF11FD538E70099 /* Pods-BIVN-BIVNUITests.debug(dev).xcconfig */;
+			baseConfigurationReference = E2BC1B02942B9EC6C33143DF /* Pods-BIVN-BIVNUITests.debug(dev).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2027,7 +2027,7 @@
 		};
 		A447CD372AFA237E001A975D /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A427EFD1CD24DD0DD9315B0A /* Pods-BIVN.debug(production).xcconfig */;
+			baseConfigurationReference = 88755D6E669424F14F99EDAB /* Pods-BIVN.debug(production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2063,7 +2063,7 @@
 		};
 		A447CD382AFA237E001A975D /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF7C23951D1684C3B4C23C3F /* Pods-BIVNTests.debug(production).xcconfig */;
+			baseConfigurationReference = 584EF9C885B78D3817A3E947 /* Pods-BIVNTests.debug(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2084,7 +2084,7 @@
 		};
 		A447CD392AFA237E001A975D /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10148A88152D0DE9EE6B95B7 /* Pods-BIVN-BIVNUITests.debug(production).xcconfig */;
+			baseConfigurationReference = FE88D4C6AA628D0468BEB8E2 /* Pods-BIVN-BIVNUITests.debug(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2159,7 +2159,7 @@
 		};
 		A447CD3B2AFA238A001A975D /* Release(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AF6A7A5C8FDA0D5ECF5C112 /* Pods-BIVN.release(dev).xcconfig */;
+			baseConfigurationReference = 7E6C4EE9296D08ABCC6BF7BC /* Pods-BIVN.release(dev).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2195,7 +2195,7 @@
 		};
 		A447CD3C2AFA238A001A975D /* Release(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E93732E4CA0DFF2939D6FF9 /* Pods-BIVNTests.release(dev).xcconfig */;
+			baseConfigurationReference = C6492E765923CACF840F0025 /* Pods-BIVNTests.release(dev).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2216,7 +2216,7 @@
 		};
 		A447CD3D2AFA238A001A975D /* Release(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEDB304AE49CE8684308182D /* Pods-BIVN-BIVNUITests.release(dev).xcconfig */;
+			baseConfigurationReference = B993DB09A0846AEDF2C41680 /* Pods-BIVN-BIVNUITests.release(dev).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2291,7 +2291,7 @@
 		};
 		A447CD3F2AFA2392001A975D /* Release(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F6A14764C31474A9C76AAE7 /* Pods-BIVN.release(production).xcconfig */;
+			baseConfigurationReference = 92315A8B7B0CF5C82073247B /* Pods-BIVN.release(production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2327,7 +2327,7 @@
 		};
 		A447CD402AFA2392001A975D /* Release(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5602A2DDD2420A365D52F37E /* Pods-BIVNTests.release(production).xcconfig */;
+			baseConfigurationReference = 9DD0C85EDD0F2E6DC74B7FC2 /* Pods-BIVNTests.release(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2348,7 +2348,7 @@
 		};
 		A447CD412AFA2392001A975D /* Release(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 171F0E096B4389913930C1CB /* Pods-BIVN-BIVNUITests.release(production).xcconfig */;
+			baseConfigurationReference = 215B5597094B1CA966AB0177 /* Pods-BIVN-BIVNUITests.release(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2483,7 +2483,7 @@
 		};
 		A4F48A2F2AB052C5007D7A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BDB19C258B1E6B8C644146 /* Pods-BIVN.debug.xcconfig */;
+			baseConfigurationReference = 90B442E36A94D00A118191CF /* Pods-BIVN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2519,7 +2519,7 @@
 		};
 		A4F48A302AB052C5007D7A82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 265E43976CB50BC7BC63F076 /* Pods-BIVN.release.xcconfig */;
+			baseConfigurationReference = E4F2B57ED493401860643D92 /* Pods-BIVN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2555,7 +2555,7 @@
 		};
 		A4F48A322AB052C5007D7A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC2B46B9F0E4714543182F7 /* Pods-BIVNTests.debug.xcconfig */;
+			baseConfigurationReference = D63AD4FFB1EB11137659AA14 /* Pods-BIVNTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2576,7 +2576,7 @@
 		};
 		A4F48A332AB052C5007D7A82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6791CB5A6F6B8D8E9BC10C8 /* Pods-BIVNTests.release.xcconfig */;
+			baseConfigurationReference = 611CAEEC044D0659930CA4F8 /* Pods-BIVNTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2597,7 +2597,7 @@
 		};
 		A4F48A352AB052C5007D7A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B4206544AA92D2A66B48A90 /* Pods-BIVN-BIVNUITests.debug.xcconfig */;
+			baseConfigurationReference = 31D68C342C70FAF5BB847B2B /* Pods-BIVN-BIVNUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2616,7 +2616,7 @@
 		};
 		A4F48A362AB052C5007D7A82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADC7F53969EE8EFC77467EEA /* Pods-BIVN-BIVNUITests.release.xcconfig */;
+			baseConfigurationReference = 43899C9A7813F191B04FDE0D /* Pods-BIVN-BIVNUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

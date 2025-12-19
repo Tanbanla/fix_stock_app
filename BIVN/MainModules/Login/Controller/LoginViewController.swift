@@ -332,13 +332,15 @@ class LoginViewController: BaseViewController , UITextFieldDelegate{
                         }
                         self.navigationController?.pushViewController(vc, animated: true)
                     } else {
-                        let vc : MainViewController = self.storyboard?.instantiateViewController(withIdentifier: R.storyboard.main.mainViewController.identifier) as! MainViewController
-                        if UserDefault.shared.getDataLoginModel().mobileAccess == TypeRole.mc.value {
-                            vc.isCheckType = .mc
-                        } else {
-                            vc.isCheckType = .pcb
-                        }
+                        guard let vc = Storyboards.inventoryUser.instantiate() as? ScanUserIDController else {return}
                         self.navigationController?.pushViewController(vc, animated: true)
+//                        let vc : MainViewController = self.storyboard?.instantiateViewController(withIdentifier: R.storyboard.main.mainViewController.identifier) as! MainViewController
+//                        if UserDefault.shared.getDataLoginModel().mobileAccess == TypeRole.mc.value {
+//                            vc.isCheckType = .mc
+//                        } else {
+//                            vc.isCheckType = .pcb
+//                        }
+//                        self.navigationController?.pushViewController(vc, animated: true)
                     }
                 } else if response.code == 401 || response.code == 403 || response.code == 60 || response.code == 15 || response.code == 17 || response.code == 56 {
                     self.showAlertExpiredToken(code: response.code) { [weak self] result in
